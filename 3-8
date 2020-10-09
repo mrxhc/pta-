@@ -1,0 +1,48 @@
+#include <stdio.h>
+int main()
+{
+    int x,count=1;
+    printf("[1] apple\n[2] pear\n[3] orange\n[4] grape\n[0] exit\n");
+    for(;count<=5;count++)
+    {
+        scanf("%d",&x);
+        if(x>=1 && x<=4)
+        {
+            if(x==1)
+            {
+                printf("price = 3.00\n");
+            }
+            else
+            {
+                if(x==2)
+                {
+                    printf("price = 2.50\n");
+                }
+                else
+                {
+                    if(x==3)
+                    {
+                        printf("price = 4.10\n");
+                    }
+                    else
+                    {
+                        printf("price = 10.20\n");
+                    }
+                }
+            }
+        }
+        else
+        {
+            if(x==0)
+            {
+                return 0;
+            }
+            else
+            {
+                printf("price = 0.00\n");
+            }
+        }
+    }
+    
+    return 0;
+}
