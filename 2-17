@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int x,N,res;
+    scanf("%d",&N);
+    if(N>=0)
+    {
+        for(x=0;x<=N;x++)
+    {
+    	res=pow(3,x);
+        printf("pow(3,%d) = %d\n",x,res);
+    }
+    }
+    return 0;   //2020.10.07.10：17a.m. write by xhc What a nice day!
+}
