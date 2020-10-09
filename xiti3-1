@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,e=0,f=0,g=0;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a<b)
+    {
+        if(b<c)
+        {
+            g=c;
+            f=b;
+            e=a;
+        }
+        else
+        {
+            if(a>c)
+            {
+                g=b;
+                f=a;
+                e=c;
+            }
+            else
+            {
+                g=b;
+                f=c;
+                e=a;
+            }
+        }
+    }
+    else
+    {
+        if(a<c)
+        {
+            g=c;
+            f=a;
+            e=b;
+        }
+        else
+        {
+            if(b>c)
+            {
+                g=a;
+                f=b;
+                e=c;
+            }
+            else
+            {
+                g=a;
+                f=c;
+                e=b;
+            }
+        }
+    }
+    printf("%d->%d->%d",e,f,g);
+    
+    return 0;   //2020.10.08 21:57 write by xhc    wdnmd...
+}
