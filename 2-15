@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+	int N,c=1,M=1;
+	double fd,sum=0;
+	scanf("%d",&N);
+	for(M=1;M<=N;M++)
+	{
+		fd=c*1.0/(3*M-2);
+		sum=sum+fd;
+		c=-c;
+	}
+	printf("sum = %.3f\n",sum);
+	return 0;  //2020.10.07.10:01a.m.write by xhc I am really happy!!!
+}
