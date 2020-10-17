@@ -7,18 +7,18 @@ int main()
 	scanf("%d %d", &m, &n);
 	
 	for(i=0; i<=n; i++)
-    {
+    	{
 		result=fact(n)/(fact(m)*fact(n-m));
 	}
-	printf("result = %.0f", result);
+	printf("result = %.lf", result);
 	return 0;
 }
 double fact(int n)
 {
 	int i;
-	double p;
-	p=1;
-	for(i=1; i<=n; i++){
+	double p=1;
+	for(i=1; i<=n; i++)
+	{
 		p=p*i;
 	}
 	
