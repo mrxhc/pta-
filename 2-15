@@ -11,5 +11,5 @@ int main()
 		c=-c;
 	}
 	printf("sum = %.3f\n",sum);
-	return 0;  //2020.10.07.10:01a.m.write by xhc I am really happy!!!
+	return 0;  //2020.10.07.10:01a.m.write by Chaos   I am really happy!!!
 }
