@@ -12,5 +12,5 @@ int main()
 
     printf("%.3f\n",sum);
 
-    return 0;
+    return 0;     //  The 9:  (double)  ==>>  1.0*   is true.  
 }
