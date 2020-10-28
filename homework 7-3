@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i,j;
+	cout<<"  |";
+	for(i=1;i<=9;i++)
+	{
+		cout<<"  "<<i;
+	}
+	cout<<endl;
+	cout<<"------------------------------"<<endl;
+	for(i=1;i<=9;i++)
+	{
+		if(i<=2)
+		{
+			cout<<i<<" |";
+			for(j=i;j<=9*i;j+=i)
+			{
+				if(j>=10)
+				{
+					cout<<" "<<j;
+				}
+				else
+				{
+					cout<<"  "<<j;
+				}
+			}
+		}
+		else
+		{
+			if(i==3 || i==4)
+			{
+				cout<<i<<" |";
+				for(j=i;j<=9*i;j+=i)
+				{
+					if(j>=12)
+					{
+						cout<<" "<<j;
+					}
+					else
+					{
+						cout<<"  "<<j;
+					}
+				}
+			}
+			else
+			{
+				cout<<i<<" |";
+				for(j=i;j<=9*i;j+=i)
+				{
+					if(j==i)
+					{
+						cout<<"  "<<j;
+					}
+					else
+					{	
+						cout<<" "<<j;
+					}
+				}
+			}
+		}
+		cout<<endl;
+	}
+	
+	return 0;
+}
